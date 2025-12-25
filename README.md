@@ -1,6 +1,6 @@
 # sentimentalmail-site
 
-Static landing page for **Mail.App** (Apple Mail extension).
+Static landing page for **Sentimental** (a macOS Apple Mail extension).
 
 ## Run locally
 
@@ -14,5 +14,5 @@ Then visit: http://localhost:8000
 
 ## Customize
 
-- Update the App Store and Documentation links in `index.html` (search for `href="#"`).
+- Update the App Store link in `index.html` (search for `href="#"`).
 - Update the contact email in the footer.

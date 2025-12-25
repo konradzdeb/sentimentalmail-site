@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mail.App — Understand email tone in Apple Mail</title>
-  <meta name="description" content="Mail.App is a macOS Mail extension that analyses your emails locally and highlights emotional tone and intent to help you read, prioritise, and respond more effectively." />
+  <title>Sentimental — Understand email tone in Apple Mail</title>
+  <meta name="description" content="Sentimental is a macOS Mail extension that performs on-device linguistic and emotional analysis of email messages and presents the results inline in Apple Mail." />
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
 </head>
@@ -15,15 +15,15 @@
   <header class="site-header">
     <div class="wrap">
       <nav class="nav" aria-label="Primary">
-        <a class="brand" href="#top" aria-label="Mail.App home">
+        <a class="brand" href="#top" aria-label="Sentimental home">
           <span class="logo" aria-hidden="true"></span>
-          <span>Mail.App</span>
+          <span>Sentimental</span>
         </a>
 
         <div class="nav-links">
-          <a href="#features">Features</a>
-          <a href="#privacy">Privacy</a>
-          <a href="#faq">FAQ</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="faq.html">FAQ</a>
           <a href="#download" class="btn btn--primary">
             <span class="btn__dot" aria-hidden="true"></span>
             Download
@@ -40,28 +40,28 @@
           <div class="hero-card">
             <div class="hero-kicker">
               <span class="hero-kicker__pill">macOS Mail extension</span>
-              <span>On-device sentiment &amp; intent signals</span>
+              <span>On-device tone &amp; intent markers</span>
             </div>
 
-            <h1 class="hero-title">Understand email tone without leaving Apple Mail.</h1>
+            <h1 class="hero-title">Make tone and intent visible, inline in Apple Mail.</h1>
 
             <p class="hero-subtitle">
-              Mail.App analyses your emails locally and highlights emotional tone and intent to help you read, prioritise,
-              and respond more effectively.
+              Sentimental performs on-device linguistic and emotional analysis and renders compact, explainable signals at the
+              point of reading—without changing your workflow.
             </p>
 
             <div class="hero-cta">
               <a class="btn btn--primary" href="#download">
                 <span class="btn__dot" aria-hidden="true"></span>
-                Get Mail.App
+                Get Sentimental
               </a>
-              <a class="btn" href="#features">See features</a>
+              <a class="btn" href="#capabilities">See capabilities</a>
             </div>
 
             <div class="hero-meta" aria-label="Key points">
               <span class="meta-chip"><span class="meta-chip__dot" aria-hidden="true"></span>On-device</span>
-              <span class="meta-chip"><span class="meta-chip__dot" aria-hidden="true"></span>No tracking</span>
-              <span class="meta-chip"><span class="meta-chip__dot" aria-hidden="true"></span>Built for Apple Mail</span>
+              <span class="meta-chip"><span class="meta-chip__dot" aria-hidden="true"></span>Offline-first</span>
+              <span class="meta-chip"><span class="meta-chip__dot" aria-hidden="true"></span>Deterministic</span>
             </div>
           </div>
 
@@ -70,7 +70,7 @@
               <div class="traffic" aria-hidden="true">
                 <span></span><span></span><span></span>
               </div>
-              <div class="demo-title">Inbox preview</div>
+              <div class="demo-title">Inline markers preview</div>
             </div>
 
             <div class="demo-body">
@@ -87,7 +87,7 @@
                   <strong>Invoice overdue</strong>
                   <small>We still haven’t received payment. Please confirm when this will be settled.</small>
                 </div>
-                <span class="tag tag--warn"><span class="tag__dot" aria-hidden="true"></span>Firm</span>
+                <span class="tag tag--warn"><span class="tag__dot" aria-hidden="true"></span>Urgent</span>
               </div>
 
               <div class="mail-row">
@@ -95,7 +95,7 @@
                   <strong>Important: account access</strong>
                   <small>This is unacceptable. I need this resolved immediately.</small>
                 </div>
-                <span class="tag tag--danger"><span class="tag__dot" aria-hidden="true"></span>Escalated</span>
+                <span class="tag tag--danger"><span class="tag__dot" aria-hidden="true"></span>High intensity</span>
               </div>
 
               <div class="mail-row">
@@ -111,124 +111,113 @@
       </div>
     </section>
 
-    <section id="features" class="app-section">
+    <section id="capabilities" class="app-section">
       <div class="wrap">
-        <h2 class="app-section__title">Features</h2>
-        <p class="app-section__lede">Designed for fast triage and better replies, with privacy-first defaults.</p>
+        <h2 class="app-section__title">Capabilities</h2>
+        <p class="app-section__lede">
+          Built for fast inbox use: clean text extraction, explainable scoring, and compact markers that appear where you read.
+        </p>
 
         <div class="app-grid">
           <div class="app-card">
-            <h3>On-device analysis</h3>
-            <p>Sentiment processing happens locally on your Mac. Nothing is sent to the cloud.</p>
+            <h3>Local text extraction &amp; cleaning</h3>
+            <p>Extracts subject and body, removes HTML markup, normalises whitespace, and produces clean text for analysis.</p>
           </div>
 
           <div class="app-card">
-            <h3>Emotional tone &amp; intent</h3>
-            <p>Highlights tone and likely intent to help you respond with the right level of care.</p>
+            <h3>Sentiment &amp; tone scoring</h3>
+            <p>Computes sentiment distributions (positive, neutral, negative) and derives higher-level signals.</p>
           </div>
 
           <div class="app-card">
-            <h3>Works inside Apple Mail</h3>
-            <p>Native Mail extension. No new inbox, no forwarding, no workflow changes.</p>
+            <h3>Intent signals</h3>
+            <p>Derives indicators such as urgency and emotional intensity, normalised for consistent visual comparison.</p>
           </div>
 
           <div class="app-card">
-            <h3>Clear visual indicators</h3>
-            <p>Simple labels and markers make important messages easier to spot at a glance.</p>
+            <h3>Deterministic message classification</h3>
+            <p>Assigns discrete markers with logic designed to be explainable and configurable rather than hard-coded.</p>
           </div>
 
           <div class="app-card">
-            <h3>Smart prioritisation</h3>
-            <p>Helps surface messages that need attention so you can triage faster.</p>
+            <h3>Inline Apple Mail integration</h3>
+            <p>Renders results directly within the message view—no separate dashboard or companion app required.</p>
           </div>
 
           <div class="app-card">
-            <h3>Privacy-first defaults</h3>
-            <p>No tracking and no analytics by default. Your email stays yours.</p>
+            <h3>Native SwiftUI rendering</h3>
+            <p>Adaptive layouts that respect system font and size changes, with rendering structured for testing.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="privacy" class="app-section">
+    <section id="customisation" class="app-section">
       <div class="wrap">
-        <h2 class="app-section__title">Privacy</h2>
-        <p class="app-section__lede">
-          Email is sensitive. Mail.App is built around minimising data movement and keeping control with you.
-        </p>
+        <h2 class="app-section__title">Customisation</h2>
+        <p class="app-section__lede">Control how markers look and behave, with system-native preferences and accessibility in mind.</p>
 
-        <div class="highlights">
-          <div class="callout">
-            <h3>Local by default</h3>
-            <p>Analysis runs on your device, alongside Apple Mail.</p>
-
-            <ul class="list">
-              <li><span class="tick" aria-hidden="true">✓</span><span>No cloud processing for message content</span></li>
-              <li><span class="tick" aria-hidden="true">✓</span><span>No forwarding, no copy to external inboxes</span></li>
-              <li><span class="tick" aria-hidden="true">✓</span><span>Designed to be unobtrusive and lightweight</span></li>
-            </ul>
+        <div class="app-grid">
+          <div class="app-card">
+            <h3>Marker styles</h3>
+            <p>Toggleable marker semantics (flag-style vs colour-style labelling).</p>
           </div>
 
-          <div class="callout callout--alt">
-            <h3>Simple, explainable signals</h3>
-            <p>Indicators are designed to support judgement, not replace it.</p>
+          <div class="app-card">
+            <h3>Adjustable font sizing</h3>
+            <p>Supports accessibility and readability with user-adjustable sizing.</p>
+          </div>
 
-            <ul class="list">
-              <li><span class="tick" aria-hidden="true">✓</span><span>Helps spot urgency and emotional charge quickly</span></li>
-              <li><span class="tick" aria-hidden="true">✓</span><span>Supports better replies under time pressure</span></li>
-              <li><span class="tick" aria-hidden="true">✓</span><span>Works with your existing folders and rules</span></li>
-            </ul>
+          <div class="app-card">
+            <h3>Localisation-ready</h3>
+            <p>All user-facing strings are localisable and prepared for multi-language expansion.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="faq" class="app-section">
+
+    <section id="reliability" class="app-section">
       <div class="wrap">
-        <h2 class="app-section__title">FAQ</h2>
-        <p class="app-section__lede">Short answers to common questions.</p>
+        <h2 class="app-section__title">Performance &amp; reliability</h2>
+        <p class="app-section__lede">Built to run quickly in high-volume inboxes, with stable, predictable behaviour.</p>
 
-        <div class="faq">
-          <details>
-            <summary>Does Mail.App send my emails anywhere?</summary>
-            <p>No. The intended design is on-device analysis. Your email content stays on your Mac.</p>
-          </details>
+        <div class="app-grid">
+          <div class="app-card">
+            <h3>Lightweight execution</h3>
+            <p>Designed to analyse messages quickly without blocking UI rendering.</p>
+          </div>
 
-          <details>
-            <summary>Do I need to use a new inbox?</summary>
-            <p>No. Mail.App integrates with Apple Mail as an extension, so you keep your existing workflow.</p>
-          </details>
+          <div class="app-card">
+            <h3>Deterministic behaviour</h3>
+            <p>The same input produces the same output, without adaptive components that drift over time.</p>
+          </div>
 
-          <details>
-            <summary>Is sentiment analysis always correct?</summary>
-            <p>No. Treat the indicators as a prompt. You make the final call, especially for high-stakes messages.</p>
-          </details>
-
-          <details>
-            <summary>Will it slow down Mail?</summary>
-            <p>It is designed to be lightweight and unobtrusive. Performance depends on your Mac and mailbox size.</p>
-          </details>
+          <div class="app-card">
+            <h3>Structured for testing</h3>
+            <p>Core logic and rendering are organised for unit and snapshot testing, emphasising stability across macOS versions.</p>
+          </div>
         </div>
       </div>
     </section>
+
 
     <section id="download" class="app-section">
       <div class="wrap">
         <h2 class="app-section__title">Download</h2>
-        <p class="app-section__lede">Install in minutes. Keep control of your inbox.</p>
+        <p class="app-section__lede">Install in minutes. Enable the extension in Apple Mail settings.</p>
 
         <div class="download">
           <div class="download-card">
-            <h3>Get Mail.App</h3>
+            <h3>Get Sentimental</h3>
             <p>Download the app and enable the extension in Apple Mail settings.</p>
             <div class="hero-cta">
               <a class="btn btn--primary" href="#" aria-label="Download from the App Store">
                 <span class="btn__dot" aria-hidden="true"></span>
                 App Store
               </a>
-              <a class="btn" href="#" aria-label="Read documentation">Documentation</a>
             </div>
-            <p class="tip muted">Tip: replace links above with your App Store URL and docs URL.</p>
+            <p class="tip muted">Tip: replace the link above with your App Store URL.</p>
           </div>
 
           <div class="download-card">
@@ -238,7 +227,7 @@
               <li><span>Platform</span><b>macOS</b></li>
               <li><span>Integration</span><b>Apple Mail extension</b></li>
               <li><span>Connection</span><b>Not required</b></li>
-              <li><span>Data</span><b>On-device</b></li>
+              <li><span>Processing</span><b>On-device</b></li>
             </ul>
           </div>
         </div>
@@ -250,13 +239,13 @@
     <div class="wrap">
       <div class="footer-grid">
         <div>
-          © <span id="year"></span> Mail.App
+          © <span id="year"></span> Sentimental
           <span class="kbd kbd--spaced" aria-hidden="true">Built for macOS</span>
         </div>
 
         <div class="footer-links" aria-label="Footer links">
-          <a href="#privacy">Privacy</a>
-          <a href="#faq">FAQ</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="faq.html">FAQ</a>
           <a href="mailto:hello@example.com">Contact</a>
         </div>
       </div>
