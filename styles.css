@@ -84,6 +84,7 @@ a:hover{ text-decoration: underline; text-decoration-color: rgba(255,255,255,.25
   height: 34px;
   border-radius: 12px;
   background:
+    url("images/iconmedium_1024x1024.png") center / cover no-repeat,
     radial-gradient(14px 14px at 28% 32%, rgba(255,255,255,.85), rgba(255,255,255,.0) 70%),
     linear-gradient(135deg, var(--brand), var(--brand2));
   box-shadow: 0 10px 24px rgba(124,92,255,.18);
@@ -500,5 +501,50 @@ footer{
 .muted{ color: var(--muted); }
 .tip{
   margin-top: 12px;
+  font-size: 12px;
+}
+
+.media{
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: var(--radius2);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.media-card{
+  margin: 0;
+  padding: 12px;
+}
+.media-card img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.18);
+}
+.media-caption{
+  margin: 10px 6px 0 6px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.screenshot{
+  margin: 12px 0 2px 0;
+  padding: 12px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.10);
+}
+.screenshot img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.10);
+}
+.screenshot figcaption{
+  margin-top: 10px;
+  color: var(--muted);
   font-size: 12px;
 }
