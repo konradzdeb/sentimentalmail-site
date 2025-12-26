@@ -38,7 +38,20 @@
             Download
           </a>
           <button class="theme-toggle" type="button" aria-label="Switch theme" title="Switch theme">
-            <span class="theme-toggle__sun" aria-hidden="true">☀︎</span>
+            <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2" />
+              <path d="M12 20v2" />
+              <path d="M4.93 4.93l1.41 1.41" />
+              <path d="M17.66 17.66l1.41 1.41" />
+              <path d="M2 12h2" />
+              <path d="M20 12h2" />
+              <path d="M4.93 19.07l1.41-1.41" />
+              <path d="M17.66 6.34l1.41-1.41" />
+            </svg>
+            <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z" />
+            </svg>
           </button>
         </div>
       </nav>
@@ -58,8 +71,8 @@
             <h1 class="hero-title">Make tone and intent visible, inline in Apple Mail.</h1>
 
             <p class="hero-subtitle">
-              Sentimental performs on-device linguistic and emotional analysis and renders compact, explainable signals at the
-              point of reading—without changing your workflow.
+              Start your day the way you want: focus on positive replies first, or park challenging threads until later.
+              Sentimental enriches Apple Mail with on-device sentiment scoring so you can triage faster and respond with context.
             </p>
 
             <div class="hero-cta">
@@ -97,92 +110,43 @@
       <div class="wrap">
         <h2 class="app-section__title">Capabilities</h2>
         <p class="app-section__lede">
-          Built for fast inbox use: clean text extraction, explainable scoring, and compact markers that appear where you read.
+          Seamlessly integrated with Apple Mail. Sentimental scores the sentiment of your messages on your Mac and presents
+          clear markers inline so you can triage with confidence.
         </p>
 
         <div class="app-grid">
           <div class="app-card">
-            <h3 class="card-title"><span class="card-ico" aria-hidden="true">🧹</span><span>Local text extraction &amp; cleaning</span></h3>
-            <p>Extracts subject and body, removes HTML markup, normalises whitespace, and produces clean text for analysis.</p>
+            <h3 class="card-title"><span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10.5V16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-5.5"/><path d="M22 10.5 12 14 2 10.5"/><path d="M22 8 12 12 2 8"/></svg></span><span>Seamless Apple Mail integration</span></h3>
+            <p>Works inside Apple Mail without changing how you read, search, or organise your inbox.</p>
           </div>
 
           <div class="app-card">
-            <h3 class="card-title"><span class="card-ico" aria-hidden="true">📊</span><span>Sentiment &amp; tone scoring</span></h3>
-            <p>Computes sentiment distributions (positive, neutral, negative) and derives higher-level signals.</p>
+            <h3 class="card-title"><span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 6-6"/></svg></span><span>Sentiment scoring with thresholds</span></h3>
+            <p>Scores messages and lets you choose thresholds so markers match your inbox and tolerance for “negative” or “urgent” tone.</p>
           </div>
 
           <div class="app-card">
-            <h3 class="card-title"><span class="card-ico" aria-hidden="true">⚡️</span><span>Intent signals</span></h3>
-            <p>Derives indicators such as urgency and emotional intensity, normalised for consistent visual comparison.</p>
+            <h3 class="card-title"><span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v6"/><path d="M4 12h16v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6Z"/><path d="M8 10h8"/></svg></span><span>Marker style selection</span></h3>
+            <p>Select how sentiment shows up: colour semantics or flag-style markers, depending on how you triage.</p>
           </div>
 
           <div class="app-card">
-            <h3 class="card-title"><span class="card-ico" aria-hidden="true">🧭</span><span>Deterministic message classification</span></h3>
-            <p>Assigns discrete markers with logic designed to be explainable and configurable rather than hard-coded.</p>
+            <h3 class="card-title"><span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span><span>On-device processing</span></h3>
+            <p>Analysis happens on your machine. No message content is sent out and Sentimental works offline.</p>
           </div>
 
           <div class="app-card">
-            <h3 class="card-title"><span class="card-ico" aria-hidden="true">✉️</span><span>Inline Apple Mail integration</span></h3>
-            <p>Renders results directly within the message view—no separate dashboard or companion app required.</p>
+            <h3 class="card-title"><span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"/><path d="M7 6v-2h10v2"/><path d="M6 6l1 14h10l1-14"/><path d="M10 11v6"/><path d="M14 11v6"/></svg></span><span>Clean text extraction</span></h3>
+            <p>Extracts subject and body, removes HTML markup, and normalises whitespace for consistent scoring.</p>
           </div>
 
           <div class="app-card">
-            <h3 class="card-title"><span class="card-ico" aria-hidden="true">🧩</span><span>Native SwiftUI rendering</span></h3>
-            <p>Adaptive layouts that respect system font and size changes, with rendering structured for testing.</p>
+            <h3 class="card-title"><span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"/></svg></span><span>Localisation-ready</span></h3>
+            <p>User-facing strings are prepared for translation and multi-language support.</p>
           </div>
         </div>
       </div>
     </section>
-
-    <section id="customisation" class="app-section">
-      <div class="wrap">
-        <h2 class="app-section__title">Customisation</h2>
-        <p class="app-section__lede">Control how markers look and behave, with system-native preferences and accessibility in mind.</p>
-
-        <div class="app-grid">
-          <div class="app-card">
-            <h3 class="card-title"><span class="card-ico" aria-hidden="true">🏷️</span><span>Marker styles</span></h3>
-            <p>Toggleable marker semantics (flag-style vs colour-style labelling).</p>
-          </div>
-
-          <div class="app-card">
-            <h3 class="card-title"><span class="card-ico" aria-hidden="true">🔠</span><span>Adjustable font sizing</span></h3>
-            <p>Supports accessibility and readability with user-adjustable sizing.</p>
-          </div>
-
-          <div class="app-card">
-            <h3 class="card-title"><span class="card-ico" aria-hidden="true">🌍</span><span>Localisation-ready</span></h3>
-            <p>All user-facing strings are localisable and prepared for multi-language expansion.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="reliability" class="app-section">
-      <div class="wrap">
-        <h2 class="app-section__title">Performance &amp; reliability</h2>
-        <p class="app-section__lede">Built to run quickly in high-volume inboxes, with stable, predictable behaviour.</p>
-
-        <div class="app-grid">
-          <div class="app-card">
-            <h3>Lightweight execution</h3>
-            <p>Designed to analyse messages quickly without blocking UI rendering.</p>
-          </div>
-
-          <div class="app-card">
-            <h3>Deterministic behaviour</h3>
-            <p>The same input produces the same output, without adaptive components that drift over time.</p>
-          </div>
-
-          <div class="app-card">
-            <h3>Structured for testing</h3>
-            <p>Core logic and rendering are organised for unit and snapshot testing, emphasising stability across macOS versions.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
 
     <section id="download" class="app-section">
       <div class="wrap">

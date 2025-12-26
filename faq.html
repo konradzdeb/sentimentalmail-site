@@ -38,7 +38,20 @@
             Download
           </a>
           <button class="theme-toggle" type="button" aria-label="Switch theme" title="Switch theme">
-            <span class="theme-toggle__sun" aria-hidden="true">☀︎</span>
+            <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2" />
+              <path d="M12 20v2" />
+              <path d="M4.93 4.93l1.41 1.41" />
+              <path d="M17.66 17.66l1.41 1.41" />
+              <path d="M2 12h2" />
+              <path d="M20 12h2" />
+              <path d="M4.93 19.07l1.41-1.41" />
+              <path d="M17.66 6.34l1.41-1.41" />
+            </svg>
+            <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z" />
+            </svg>
           </button>
         </div>
       </nav>
@@ -73,22 +86,27 @@
           </details>
 
           <details>
-            <summary>Is the classification “black box” AI?</summary>
-            <p>No. Marker logic is deterministic and intended to be explainable. Treat the indicators as decision support, not automation.</p>
+            <summary>Is this a separate inbox or a new email client?</summary>
+            <p>No. Sentimental integrates directly into Apple Mail and surfaces results inline while you read.</p>
           </details>
 
           <details>
-            <summary>Can I change how markers look?</summary>
-            <p>Yes. Marker semantics are toggleable (flag vs colour) and preferences are stored using system-native defaults.</p>
+            <summary>Can I control what counts as “positive” or “negative”?</summary>
+            <p>Yes. Sentimental is designed to let you adjust thresholds so labels match your inbox (and your preferences).</p>
+          </details>
+
+          <details>
+            <summary>Can I choose how markers are displayed?</summary>
+            <p>Yes. Pick a marker style that fits how you triage: colour semantics or flag-style markers.</p>
             <figure class="screenshot">
               <img
                 src="images/include_filters.png"
                 width="1100"
                 height="1076"
-                alt="Preferences screen showing filtering options"
+                alt="Settings screen showing Sentimental preferences"
                 loading="lazy"
               />
-              <figcaption>Simple, system-native preferences.</figcaption>
+              <figcaption>Choose marker style and tune behaviour.</figcaption>
             </figure>
           </details>
         </div>
