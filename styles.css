@@ -18,6 +18,7 @@
   --pad2: 34px;
   --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
   --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+  --logo-image: url("images/iconmedium_1024x1024.png");
 }
 
 html[data-theme="light"]{
@@ -28,6 +29,7 @@ html[data-theme="light"]{
   --muted: rgba(0,0,0,.62);
   --faint: rgba(0,0,0,.12);
   --shadow: 0 12px 30px rgba(0,0,0,.10);
+  --logo-image: url("images/icon-light.png");
 }
 
 * { box-sizing: border-box; }
@@ -107,7 +109,7 @@ html[data-theme="light"] .site-header{
   height: 34px;
   border-radius: 12px;
   background:
-    url("images/iconmedium_1024x1024.png") center / cover no-repeat,
+    var(--logo-image) center / cover no-repeat,
     radial-gradient(14px 14px at 28% 32%, rgba(255,255,255,.85), rgba(255,255,255,.0) 70%),
     linear-gradient(135deg, var(--brand), var(--brand2));
   box-shadow: 0 10px 24px rgba(124,92,255,.18);
@@ -466,6 +468,52 @@ html[data-theme="light"] .callout--alt{
   display: grid;
   gap: 10px;
 }
+
+.faq details > summary{
+  display: block;
+  list-style: none;
+  padding-right: 26px;
+  position: relative;
+}
+.faq details > summary::-webkit-details-marker{ display: none; }
+.faq details > summary::marker{ content: ""; }
+.faq details > summary::after{
+  content: "";
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-60%) rotate(45deg);
+  opacity: .75;
+}
+.faq details[open] > summary::after{
+  transform: translateY(-40%) rotate(225deg);
+}
+
+.faq-media{
+  margin-top: 12px;
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+@media (max-width: 760px){
+  .faq-media{
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+.faq-media__text{
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.faq details .faq-media__text p{
+  margin: 0;
+}
+
 details{
   background: rgba(255,255,255,.05);
   border: 1px solid rgba(255,255,255,.10);
@@ -654,7 +702,7 @@ html[data-theme="light"] .theme-icon--sun{ display: none; }
   padding: 12px;
   border-radius: 16px;
   background: rgba(255,255,255,.04);
-  border: 1px solid rgba(255,255,255,.10);
+  border: 10px solid rgba(30, 158, 75, 0.1);
   max-width: 760px;
 }
 .screenshot img{
@@ -665,10 +713,35 @@ html[data-theme="light"] .theme-icon--sun{ display: none; }
   display: block;
   margin: 0 auto;
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,.10);
+  border: 100px solid rgba(54, 80, 136, 0.1);
 }
 .screenshot figcaption{
   margin-top: 10px;
   color: var(--muted);
   font-size: 12px;
+}
+
+.faq .screenshot{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  max-width: 420px;
+  flex: 0 0 380px;
+}
+.faq .screenshot img{
+  width: 100%;
+  max-width: 100%;
+  max-height: none;
+  margin: 0;
+  border-radius: 16px;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+@media (max-width: 760px){
+  .faq .screenshot{
+    flex: 0 0 auto;
+    max-width: 100%;
+  }
 }
