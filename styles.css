@@ -245,6 +245,11 @@ html[data-theme="light"] .btn--primary{
   font-weight: 600;
   letter-spacing: .2px;
 }
+html[data-theme="light"] .hero-kicker__pill{
+  background: rgba(124,92,255,.18);
+  border: 1px solid rgba(124,92,255,.35);
+  color: rgba(38,28,92,.90);
+}
 .hero-title{
   font-size: clamp(30px, 4vw, 46px);
   margin: 0 0 12px 0;
@@ -625,18 +630,18 @@ html[data-theme="light"] .kbd{
   gap: 10px;
 }
 .card-ico{
-  width: 22px;
-  height: 22px;
+  width: 28px;
+  height: 28px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 22px;
+  flex: 0 0 28px;
   border-radius: 8px;
   background: rgba(255,255,255,.06);
   border: 1px solid rgba(255,255,255,.10);
   color: rgba(255,255,255,.82);
 }
-.card-ico svg{ width: 14px; height: 14px; display: block; }
+.card-ico svg{ width: 18px; height: 18px; display: block; }
 html[data-theme="light"] .card-ico{
   background: rgba(0,0,0,.04);
   border: 1px solid rgba(0,0,0,.10);
