@@ -3,6 +3,19 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 const THEME_KEY = "sentimental-theme";
 
+function syncHeroImage(theme) {
+  const heroImage = document.querySelector(".hero-image");
+  if (!heroImage) return;
+
+  const lightSrc = heroImage.getAttribute("data-light-src");
+  const darkSrc = heroImage.getAttribute("data-dark-src");
+  const nextSrc = theme === "light" ? lightSrc : darkSrc;
+
+  if (nextSrc && heroImage.getAttribute("src") !== nextSrc) {
+    heroImage.setAttribute("src", nextSrc);
+  }
+}
+
 function getPreferredTheme() {
   const saved = localStorage.getItem(THEME_KEY);
   if (saved === "light" || saved === "dark") return saved;
@@ -11,6 +24,7 @@ function getPreferredTheme() {
 
 function applyTheme(theme) {
   document.documentElement.setAttribute("data-theme", theme);
+  syncHeroImage(theme);
 }
 
 function setTheme(theme) {
