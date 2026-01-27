@@ -187,6 +187,10 @@ html[data-theme="light"] .btn--primary{
   margin: 0 0 18px 0;
   letter-spacing: .2px;
 }
+.app-section__title--privacy{
+  font-size: clamp(28px, 4vw, 34px);
+  letter-spacing: -0.3px;
+}
 .app-section__lede{
   margin: 0 0 26px 0;
   color: var(--muted);
