@@ -439,6 +439,12 @@ html[data-theme="light"] .callout--alt{
 }
 .callout h3{ margin: 0 0 8px 0; font-size: 16px; }
 .callout p{ margin: 0; color: var(--muted); font-size: 14px; }
+.setup-mini{
+  margin: 18px 0 22px 0;
+}
+.setup-note{
+  margin-top: 10px;
+}
 .list{
   margin: 14px 0 0 0;
   padding: 0;

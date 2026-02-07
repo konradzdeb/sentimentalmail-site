@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Sentimental — Understand email tone in Apple Mail</title>
-  <meta name="description" content="Sentimental is a macOS Mail extension that performs on-device linguistic and emotional analysis of email messages and presents the results inline in Apple Mail." />
+  <meta name="description" content="Sentimental is a macOS Mail extension that performs on-device sentiment analysis of email messages and presents results inline in Apple Mail." />
   <link rel="stylesheet" href="styles.css" />
   <meta name="theme-color" content="#0b0d12" />
   <link rel="icon" href="images/favicons/favicon.ico" sizes="any" />
@@ -13,7 +13,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Sentimental — Understand email tone in Apple Mail" />
-  <meta property="og:description" content="On-device linguistic and emotional analysis, presented inline in Apple Mail." />
+  <meta property="og:description" content="On-device sentiment analysis, presented inline in Apple Mail." />
   <meta property="og:image" content="images/share.png" />
   <script src="script.js" defer></script>
 </head>
@@ -65,10 +65,10 @@
           <div class="hero-card">
             <div class="hero-kicker">
               <span class="hero-kicker__pill">macOS Mail extension</span>
-              <span>On-device tone &amp; intent markers</span>
+              <span>On-device sentiment markers</span>
             </div>
 
-            <h1 class="hero-title">Make tone and intent visible, inline in Apple Mail.</h1>
+            <h1 class="hero-title">Make email tone visible, inline in Apple Mail.</h1>
 
             <p class="hero-subtitle">
               Start your day the way you want: focus on positive replies first, or park challenging threads until later.
@@ -125,12 +125,22 @@
 
           <div class="app-card">
             <h3 class="card-title"><span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 6-6"/></svg></span><span>Sentiment scoring with thresholds</span></h3>
-            <p>Scores messages and lets you choose thresholds so markers match your inbox and tolerance for “negative” or “urgent” tone.</p>
+            <p>Scores messages and lets you choose thresholds so markers match your inbox and tolerance for negative, neutral, or positive tone.</p>
           </div>
 
           <div class="app-card">
             <h3 class="card-title"><span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v6"/><path d="M4 12h16v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6Z"/><path d="M8 10h8"/></svg></span><span>Marker style selection</span></h3>
             <p>Select how sentiment shows up: colour semantics or flag-style markers, depending on how you triage.</p>
+          </div>
+
+          <div class="app-card">
+            <h3 class="card-title"><span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 16v-6"/><path d="M12 16v-10"/><path d="M17 16v-4"/></svg></span><span>Message statistics &amp; trends</span></h3>
+            <p>Review positive, neutral, and negative counts over time with date-range charts.</p>
+          </div>
+
+          <div class="app-card">
+            <h3 class="card-title"><span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h18"/><path d="M6 12h12"/><path d="M10 19h4"/></svg></span><span>Sender filters</span></h3>
+            <p>Include or exclude sender patterns so scoring focuses on the mail you care about.</p>
           </div>
 
           <div class="app-card">
@@ -144,8 +154,8 @@
           </div>
 
           <div class="app-card">
-            <h3 class="card-title"><span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"/></svg></span><span>Localisation-ready</span></h3>
-            <p>User-facing strings are prepared for translation and multi-language support.</p>
+            <h3 class="card-title"><span class="card-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"/></svg></span><span>Localized UI</span></h3>
+            <p>Localized UI so the interface feels native on your Mac.</p>
           </div>
         </div>
       </div>
@@ -154,7 +164,17 @@
     <section id="download" class="app-section">
       <div class="wrap">
         <h2 class="app-section__title">Download</h2>
-        <p class="app-section__lede">Install in minutes. Enable the extension in Apple Mail settings.</p>
+        <p class="app-section__lede">Install in minutes. Enable the extension in System Settings → Privacy &amp; Security → Extensions → Mail Extensions.</p>
+
+        <div class="callout callout--alt setup-mini">
+          <h3>Enable the Mail extension</h3>
+          <ul class="list">
+            <li><span class="tick">1</span><span>Open System Settings.</span></li>
+            <li><span class="tick">2</span><span>Go to Privacy &amp; Security → Extensions → Mail Extensions.</span></li>
+            <li><span class="tick">3</span><span>Turn on Sentimental, then open Mail and allow the extension if prompted.</span></li>
+          </ul>
+          <p class="setup-note muted">If you do not see Sentimental, launch the app once, then reopen System Settings and Mail.</p>
+        </div>
 
         <div class="download">
           <div class="download-card">
@@ -195,7 +215,7 @@
         <div class="footer-links" aria-label="Footer links">
           <a href="privacy.html">Privacy</a>
           <a href="faq.html">FAQ</a>
-          <a href="mailto:hello@example.com">Contact</a>
+          <a href="mailto:support@sentimentalmail.app">Contact</a>
         </div>
       </div>
     </div>
