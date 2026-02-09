@@ -483,6 +483,13 @@ html[data-theme="light"] .callout{
 html[data-theme="light"] .callout--alt{
   background: linear-gradient(135deg, rgba(57,211,255,.10), rgba(0,0,0,.01));
 }
+html[data-theme="light"] .setup-shot{
+  border: 1px solid rgba(0,0,0,.10);
+  background: rgba(0,0,0,.02);
+}
+html[data-theme="light"] .setup-shot img{
+  border: 1px solid rgba(0,0,0,.10);
+}
 .callout h3{ margin: 0 0 8px 0; font-size: 16px; }
 .callout p{ margin: 0; color: var(--muted); font-size: 14px; }
 .setup-mini{
@@ -490,6 +497,32 @@ html[data-theme="light"] .callout--alt{
 }
 .setup-note{
   margin-top: 10px;
+}
+.setup-gallery{
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.setup-shot{
+  margin: 0;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.04);
+}
+.setup-shot img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.12);
+}
+.setup-shot figcaption{
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
 }
 .list{
   margin: 14px 0 0 0;
@@ -578,6 +611,9 @@ details p{
 }
 @media (max-width: 900px){
   .download{ grid-template-columns: 1fr; }
+}
+@media (max-width: 820px){
+  .setup-gallery{ grid-template-columns: 1fr; }
 }
 .download-card{
   background: rgba(255,255,255,.05);
