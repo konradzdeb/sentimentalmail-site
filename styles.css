@@ -224,6 +224,26 @@ html[data-theme="light"] .btn--primary{
   border-radius: 999px;
   background: rgba(11,13,18,.75);
 }
+.btn--with-banner{
+  position: relative;
+}
+.btn__banner{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -45%);
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #d91f26;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  pointer-events: none;
+  box-shadow: 0 8px 14px rgba(0,0,0,.25);
+}
 
 .app-section{
   padding: 54px 0;
@@ -629,6 +649,19 @@ html[data-theme="light"] .download-card{
 }
 .download-card h3{ margin: 0 0 10px 0; font-size: 16px; }
 .download-card p{ margin: 0 0 14px 0; color: var(--muted); font-size: 14px; }
+.download-banner{
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  margin: 0 0 12px 0;
+  border-radius: 999px;
+  background: #d91f26;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
 .specs{
   margin: 0;
   padding: 0;
