@@ -226,20 +226,23 @@ html[data-theme="light"] .btn--primary{
 }
 .btn--with-banner{
   position: relative;
+  overflow: hidden;
 }
 .btn__banner{
   position: absolute;
   left: 50%;
-  top: 0;
-  transform: translate(-50%, -45%);
-  padding: 3px 8px;
-  border-radius: 999px;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-20deg);
+  width: 135%;
+  padding: 2px 0;
+  border-radius: 0;
   background: #d91f26;
   color: #fff;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 700;
-  letter-spacing: .05em;
+  letter-spacing: .08em;
   text-transform: uppercase;
+  text-align: center;
   white-space: nowrap;
   pointer-events: none;
   box-shadow: 0 8px 14px rgba(0,0,0,.25);
