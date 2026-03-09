@@ -1,6 +1,6 @@
 # sentimentalmail-site
 
-Static landing page for **Sentimental** (a macOS Apple Mail extension).
+Static landing page for **Sentimentalmail** (a macOS Apple Mail extension).
 
 ## Run locally
 

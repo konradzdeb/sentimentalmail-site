@@ -1,7 +1,7 @@
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-const THEME_KEY = "sentimental-theme";
+const THEME_KEY = "sentimentalmail-theme";
 
 function syncHeroImage(theme) {
   const heroImage = document.querySelector(".hero-image");
