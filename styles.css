@@ -455,6 +455,15 @@ html[data-theme="light"] .hero-kicker__pill{
 @media (max-width: 900px){
   .app-grid{ grid-template-columns: 1fr; }
 }
+.showcase-grid{
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 14px;
+}
+@media (max-width: 900px){
+  .showcase-grid{ grid-template-columns: 1fr; }
+}
 .app-card{
   background: rgba(255,255,255,.05);
   border: 1px solid rgba(255,255,255,.10);
@@ -513,6 +522,13 @@ html[data-theme="light"] .setup-shot{
 html[data-theme="light"] .setup-shot img{
   border: 1px solid rgba(0,0,0,.10);
 }
+html[data-theme="light"] .showcase-shot{
+  border: 1px solid rgba(0,0,0,.10);
+  background: rgba(0,0,0,.02);
+}
+html[data-theme="light"] .showcase-shot img{
+  border: 1px solid rgba(0,0,0,.10);
+}
 .callout h3{ margin: 0 0 8px 0; font-size: 16px; }
 .callout p{ margin: 0; color: var(--muted); font-size: 14px; }
 .setup-mini{
@@ -546,6 +562,35 @@ html[data-theme="light"] .setup-shot img{
   color: var(--muted);
   font-size: 12px;
   line-height: 1.45;
+}
+.showcase-shot{
+  margin: 0;
+  padding: 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.04);
+  box-shadow: var(--shadow);
+}
+.showcase-shot img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.18);
+}
+.showcase-shot figcaption{
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+.showcase-shot--wide{
+  grid-column: 1 / -1;
+}
+.showcase-shot--wide img{
+  max-width: 1100px;
+  margin: 0 auto;
 }
 .list{
   margin: 14px 0 0 0;
