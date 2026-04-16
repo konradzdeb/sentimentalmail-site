@@ -3,17 +3,16 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 const THEME_KEY = "sentimentalmail-theme";
 
-function syncHeroImage(theme) {
-  const heroImage = document.querySelector(".hero-image");
-  if (!heroImage) return;
+function syncThemeImages(theme) {
+  document.querySelectorAll("[data-light-src][data-dark-src]").forEach((image) => {
+    const lightSrc = image.getAttribute("data-light-src");
+    const darkSrc = image.getAttribute("data-dark-src");
+    const nextSrc = theme === "light" ? lightSrc : darkSrc;
 
-  const lightSrc = heroImage.getAttribute("data-light-src");
-  const darkSrc = heroImage.getAttribute("data-dark-src");
-  const nextSrc = theme === "light" ? lightSrc : darkSrc;
-
-  if (nextSrc && heroImage.getAttribute("src") !== nextSrc) {
-    heroImage.setAttribute("src", nextSrc);
-  }
+    if (nextSrc && image.getAttribute("src") !== nextSrc) {
+      image.setAttribute("src", nextSrc);
+    }
+  });
 }
 
 function getPreferredTheme() {
@@ -24,7 +23,7 @@ function getPreferredTheme() {
 
 function applyTheme(theme) {
   document.documentElement.setAttribute("data-theme", theme);
-  syncHeroImage(theme);
+  syncThemeImages(theme);
 }
 
 function setTheme(theme) {
