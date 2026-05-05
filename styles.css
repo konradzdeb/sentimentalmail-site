@@ -585,13 +585,6 @@ html[data-theme="light"] .showcase-shot img{
   font-size: 13px;
   line-height: 1.45;
 }
-.showcase-shot--wide{
-  grid-column: 1 / -1;
-}
-.showcase-shot--wide img{
-  max-width: 1100px;
-  margin: 0 auto;
-}
 .list{
   margin: 14px 0 0 0;
   padding: 0;
